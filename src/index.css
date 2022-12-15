@@ -11,3 +11,96 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  box-sizing: border-box;
+}
+/* layout start */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.col{
+  flex-grow: 1;
+}
+.col_1{
+  width: 8.333333%;
+}
+/* layout end */
+
+/* landing page Start */
+.mainLayout{
+  align-items: stretch;
+}
+/* landing page end */
+
+/* card Start */
+.card{
+  width: 100%;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem ;
+}
+/* card End */
+
+/* right Content start */
+.rightContent{
+  padding: 1rem;
+  background-color: rgba(84, 84, 84, 0.1);
+}
+/* right Content end */
+
+/* left Content Start */
+.leftContent{
+  background-color: rgba(84, 84, 84, 0.2);
+  height: 100%;
+}
+/* left Content End */
+
+/* navbar Start */
+.navTab{
+  background-color: white;
+  padding: 1rem 0.25rem;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.navTab--active{
+  background-color: rgb(134, 44, 165);
+  color: white;
+}
+/* hamburger Start */
+.hamburger{
+   /* padding: 1rem 0.25rem; */
+}
+.hamburger__button{
+width: 100%;
+padding: 1rem 0.25rem;
+background-color: transparent;
+border: none;
+outline: none;
+cursor: pointer;
+/* height: 18px; */
+}
+.hamburger__button--img{
+  margin: auto;
+  height: 18px;
+  width: 18px;
+}
+.hamburger__button--img img{
+  width: 100%;
+  height: 100%;
+}
+/* hamburger end */
+
+/* navTabs start */
+.navTab__container{
+  transition: all ease 1s;
+  overflow: hidden;
+}
+.navTab__container--collapse{
+  height: 0px;
+}
+/* navTabs end */
+/* navbar end */
